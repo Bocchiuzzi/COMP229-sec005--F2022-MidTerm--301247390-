@@ -10,14 +10,14 @@
                 <div class="form-group">
                     <input type="hidden"
                         name="id"
-                        value="<%= todo._id %>"
+                        value="<%= item._id %>"
                     >
                     <label for="taskTextField">Task</label>
                     <input type="text" class="form-control"
                         id="taskTextField"
                         placeholder="Enter the To-Do Task"
                         name="task" 
-                        value="<%= todo.task %>"
+                        value="<%= item.task %>"
                         required>
                 </div>              
 
@@ -27,7 +27,7 @@
                         id="descriptionTextField"
                         placeholder="Enter the description"
                         name="description" 
-                        value="<%= todo.description %>"
+                        value="<%= item.description %>"
                         >
                 </div>
 
@@ -37,8 +37,8 @@
                     class="form-check-input"
                     id="completeTextField"
                     name="complete" 
-                    value=<%= todo.complete %>
-                    <%= todo.complete == true ? "checked" : "" %>
+                    value=<%= item.complete %>
+                    <%= item.complete == true ? "checked" : "" %>
                     >
                 </div>
 
